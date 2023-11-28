@@ -12,7 +12,7 @@ export class AppComponent {
     { title: 'MisClase', url: '/folder/misclase', icon: 'book' },
     { title: 'Calendario', url: '/folder/calendario', icon: 'newspaper' },
     { title: 'Asistencia', url: '/folder/asistencia', icon: 'bar-chart' },
-    { title: 'Login', url: '/folder/login', icon: 'people' },
+    { title: 'Login', url: 'login', icon: 'people' },
   ];
   public labels = ['presente', 'total',];
   constructor() {}
