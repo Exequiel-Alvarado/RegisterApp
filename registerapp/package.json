@@ -33,6 +33,7 @@
     "@ionic/angular": "^7.0.0",
     "@ionic/lab": "^3.2.15",
     "firebase": "^10.7.1",
+    "firebase-tools": "^12.9.1",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
