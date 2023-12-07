@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inicio', url: '/folder/inicio', icon: 'apps' },
-    { title: 'MiCuenta', url: '/folder/micuenta', icon: 'paper-plane' },
-    { title: 'EscanearQR', url: '/folder/escanearqr', icon: 'qr-code'},
-    { title: 'MisClase', url: '/folder/misclase', icon: 'book' },
-    { title: 'Calendario', url: '/folder/calendario', icon: 'newspaper' },
-    { title: 'Asistencia', url: '/folder/asistencia', icon: 'bar-chart' },
+    { title: 'Inicio', url: 'inicio', icon: 'apps' },
+    { title: 'MiCuenta', url: 'mi-cuenta', icon: 'paper-plane' },
+    { title: 'EscanearQR', url: 'escanear-qr', icon: 'qr-code'},
+    { title: 'MisClase', url: 'mis-clase', icon: 'book' },
+    { title: 'Calendario', url: 'calendario', icon: 'newspaper' },
+    { title: 'Asistencia', url: 'asistencia', icon: 'bar-chart' },
     { title: 'Login', url: 'login', icon: 'people' },
   ];
   public labels = ['presente', 'total',];

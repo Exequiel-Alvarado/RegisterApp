@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'inicio',
     pathMatch: 'full'
   },
   {
@@ -22,6 +22,30 @@ const routes: Routes = [
   {
     path: 'reset-pass',
     loadChildren: () => import('./users/reset-pass/reset-pass.module').then( m => m.ResetPassPageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'mi-cuenta',
+    loadChildren: () => import('./mi-cuenta/mi-cuenta.module').then( m => m.MiCuentaPageModule)
+  },
+  {
+    path: 'escanear-qr',
+    loadChildren: () => import('./escanear-qr/escanear-qr.module').then( m => m.EscanearQRPageModule)
+  },
+  {
+    path: 'mis-clase',
+    loadChildren: () => import('./mis-clase/mis-clase.module').then( m => m.MisClasePageModule)
+  },
+  {
+    path: 'calendario',
+    loadChildren: () => import('./calendario/calendario.module').then( m => m.CalendarioPageModule)
+  },
+  {
+    path: 'asistencia',
+    loadChildren: () => import('./asistencia/asistencia.module').then( m => m.AsistenciaPageModule)
   }
 ];
 
