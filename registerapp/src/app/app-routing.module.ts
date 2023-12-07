@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+import { AuthGuard } from './guards/auth.guard.ts.service';
+
 const routes: Routes = [
   {
     path: '',
@@ -46,6 +48,11 @@ const routes: Routes = [
   {
     path: 'asistencia',
     loadChildren: () => import('./asistencia/asistencia.module').then( m => m.AsistenciaPageModule)
+  },
+  {
+    path: 'protected',
+    canActivate: [AuthGuard],
+    loadChildren: () => import('./guards/auth.guard.ts.service').then(m => m.AuthGuard)
   }
 ];
 
