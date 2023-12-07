@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatabaseService } from 'src/app/service/database.service';
 
 @Component({
   selector: 'app-login',
@@ -11,9 +12,10 @@ export class LoginPage implements OnInit {
     password:""
   }
 
-  constructor() { }
+  constructor(private database:DatabaseService) { }
 
   userslogin(){
+    this.database.create('usuarios',this.usuario)
 
   }
 
