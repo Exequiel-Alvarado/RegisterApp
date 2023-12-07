@@ -9,7 +9,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "postinstall": "npx ng-packagr --config=ng-packagr.config.js --build --watch"
   },
   "private": true,
   "dependencies": {
@@ -31,6 +32,7 @@
     "@firebase/app": "^0.9.25",
     "@ionic/angular": "^7.0.0",
     "@ionic/lab": "^3.2.15",
+    "firebase": "^10.7.1",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
