@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 import { AuthGuard } from './guards/auth.guard.ts.service';
+import { NotFoundComponentTsComponent } from './not-found/not-found.component.ts/not-found.component.ts.component';
 
 const routes: Routes = [
   {
@@ -53,6 +54,10 @@ const routes: Routes = [
     path: 'protected',
     canActivate: [AuthGuard],
     loadChildren: () => import('./guards/auth.guard.ts.service').then(m => m.AuthGuard)
+  },
+  {
+    path: '**',
+    component: NotFoundComponentTsComponent// Redirects to the not-found component
   }
 ];
 
