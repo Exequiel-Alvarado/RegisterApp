@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CanActivate, Router } from '@angular/router';
+import { CanActivate, CanActivateFn, Router } from '@angular/router';
 
 @Injectable({ providedIn: 'root' })
 export class AuthGuard implements CanActivate {
@@ -8,7 +8,7 @@ export class AuthGuard implements CanActivate {
   canActivate(): boolean {
     // Implement your authentication logic here
     // Return true if the user is authenticated, false otherwise
-    if (/* user is authenticated */) {
+    if (/* user is authenticated */"") {
       return true;
     } else {
       this.router.navigateByUrl('/login');

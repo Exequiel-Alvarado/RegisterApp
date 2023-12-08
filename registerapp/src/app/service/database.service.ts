@@ -8,7 +8,7 @@ export class DatabaseService {
 
   constructor(private firestore: AngularFirestore) { }
 
-  async create(collection, dato){
+  async create(collection: string, dato: any){
    return await  this.firestore.collection(collection).add(dato)
   }
 }
